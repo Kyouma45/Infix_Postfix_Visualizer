@@ -70,7 +70,6 @@ void Infix_Postfix(char q)
             while (precedance(stack[top_stack]) > precedance(q))
             {
                 push(post, &top_post, pop(stack, &top_stack));
-                printf("!");
             }
             push(post, &top_post, pop(stack, &top_stack));
             push(stack, &top_stack, q);
