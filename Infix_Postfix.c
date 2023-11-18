@@ -81,8 +81,9 @@ void Infix_Postfix(char q)
 
 int main()
 {
-    printf("Enter Expression:");
+    printf("Enter Infix Expression:");
     gets(expt);
+    printf("Stack:\tPostfix:");
     strcat(expt, ")");
     printf("%s\n", expt);
     push(stack, &top_stack, '(');
